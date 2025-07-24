@@ -3,22 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kyle - Voice Artist</title>
+  <title>Kyle - Voice Artist Portfolio</title>
   <style>
+    /* Body with sunset gradient background and animated overlay */
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1.6;
-      background-color: #f4f4f4;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(
+        to right,
+        #ff7e5f,
+        #feb47b,
+        #ff7e5f
+      );
+      background-size: 600% 600%;
+      animation: sunset 15s ease infinite;
+      padding: 20px;
+    }
+
+    @keyframes sunset {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    /* Container for the cards */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    /* Style for individual cards */
+    .card {
+      background-color: #fff;
+      width: 200px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+    }
+
+    /* Highlight green on hover */
+    .card:hover {
+      background-color: #a8e6a1; /* light green */
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      transform: translateY(-5px);
+    }
+
+    /* Link styles inside cards */
+    .card a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    /* Contact info block at the bottom */
+    .contact-info {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      width: 90%;
+      margin-top: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .contact-info h2 {
+      margin-top: 0;
       color: #333;
     }
-    h1 {
-      color: #007acc;
+
+    .contact-info p {
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+
+    /* Responsive text sizes for smaller screens */
+    @media(max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      .card {
+        width: 150px;
+        padding: 15px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Kyle's Voice Portfolio</h1>
-  <p>Hello! I'm Kyle, an emerging voice artist with a background in stage performance, lighting, sound production, and customer service. I specialize in bringing stories to life with efficiency and professionalism. Feel free to reach out for collaborations or projects!</p>
+  <h1>Welcome</h1>
+  
+  <!-- Card links -->
+  <div class="card-container">
+    <div class="card">
+      <a href="about.html">About Me</a>
+    </div>
+    <div class="card">
+      <a href="https://www.youtube.com/watch?v=ePHjZa1NEm8&t=11s">Demo Reel</a>
+    </div>
+    <div class="card">
+      <a href="contact.html">Contact</a>
+    </div>
+    <!-- Social media links -->
+    <div class="card">
+      <a href="https://youtube.com/@RyutheHY3N4" target="_blank">Youtube</a>
+    </div>
+    <div class="card">
+      <a href="https://instagram.com/ryu_the_hyena.va" target="_blank">Instagram</a>
+    </div>
+    <div class="card">
+      <a href="https://linkedin.com/in/kyle-v-241985a5/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <!-- Contact info block -->
+  <div class="contact-info">
+    <h2>Kyle Vasquez</h2>
+    <p>Ryu the Hyena - VO/Stage Actor</p>
+    <p><strong>(M):</strong> +1 (520) 370.0865</p>
+    <p><strong>✉️:</strong> kylervasquez395@gmail.com</p>
+    <p style="margin-top:10px; font-style:italic;">"Is there a sound your project is lacking? There's a voice for that." - Kyle V.</p>
+  </div>
 </body>
 </html>
