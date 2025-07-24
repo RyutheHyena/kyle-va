@@ -63,9 +63,27 @@
     font-weight: bold;
   }
 
-  /* Add hover effects for links */
   a:hover {
     color: #a8e6a1;
+  }
+
+  /* Style for Home button */
+  .home-button {
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .home-button:hover {
+    background-color: #a8e6a1;
+    transform: translateY(-2px);
   }
 
   @media(max-width: 600px){
@@ -74,6 +92,10 @@
     }
     .contact-box {
       padding: 20px;
+    }
+    .home-button {
+      font-size: 1em;
+      padding: 10px 20px;
     }
   }
 </style>
@@ -87,5 +109,8 @@
   <p><strong>✉️:</strong> <a href="mailto:kylervasquez395@gmail.com">kylervasquez395@gmail.com</a></p>
   <p style="margin-top:20px;">"Is there a sound your project is lacking? There's a voice for that." - Kyle V.</p>
 </div>
+
+<!-- Home Button -->
+<a href="index.html" class="home-button">Home</a>
 </body>
 </html>
