@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact Kyle</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(
+      to right,
+      #ff7e5f,
+      #feb47b,
+      #ff7e5f
+    );
+    background-size: 600% 600%;
+    animation: sunset 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    color: #fff;
+  }
+
+  @keyframes sunset {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+
+  .contact-box {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  /* Add hover effects for links */
+  a:hover {
+    color: #a8e6a1;
+  }
+
+  @media(max-width: 600px){
+    h1 {
+      font-size: 2em;
+    }
+    .contact-box {
+      padding: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+<h1>Contact Kyle</h1>
+<div class="contact-box">
+  <h2>Kyle Vasquez</h2>
+  <p>Ryu the Hyena - VO/Stage Actor</p>
+  <p><strong>(M):</strong> +1 (520) 370.0865</p>
+  <p><strong>✉️:</strong> <a href="mailto:kylervasquez395@gmail.com">kylervasquez395@gmail.com</a></p>
+  <p style="margin-top:20px;">"Is there a sound your project is lacking? There's a voice for that." - Kyle V.</p>
+</div>
+</body>
+</html>
