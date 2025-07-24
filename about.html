@@ -51,8 +51,24 @@
     margin-bottom: 15px;
   }
 
-  /* Optional: add some animated icons or images for memorability */
-  /* For example, a small animated microphone or star icon can be added here */
+  /* Style for Home button */
+  .home-button {
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .home-button:hover {
+    background-color: #a8e6a1;
+    transform: translateY(-2px);
+  }
 
   @media(max-width: 600px){
     h1 {
@@ -60,6 +76,10 @@
     }
     .content {
       padding: 20px;
+    }
+    .home-button {
+      font-size: 1em;
+      padding: 10px 20px;
     }
   }
 </style>
@@ -71,5 +91,8 @@
   <p>My experience behind the scenes has given me a technical edge, ensuring high-quality recordings and efficient project turnaround. Whether you're looking for a warm narration, dynamic character voices, or professional audio, I’m dedicated to exceeding your expectations.</p>
   <p>Let's create something memorable together!</p>
 </div>
+
+<!-- Home Button -->
+<a href="index.html" class="home-button">Home</a>
 </body>
 </html>
